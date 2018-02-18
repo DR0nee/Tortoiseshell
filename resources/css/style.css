@@ -60,3 +60,30 @@ html {
   font-weight: bold;
   padding: 1.5rem 5rem;
 }
+
+/* secondcontainer css */
+
+.secondcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.imgcontainer {
+  height: 8rem;
+  width: 5rem;
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.imgcontainer span {
+  display: block;
+  text-align: center;
+}
+
+.imgcontainer img {
+  width: 3.5rem;
+}
