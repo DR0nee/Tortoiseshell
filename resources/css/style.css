@@ -87,3 +87,54 @@ html {
 .imgcontainer img {
   width: 3.5rem;
 }
+
+/* columncontainer css */
+
+.columncontainer {
+  display: flex;
+  justify-content: center;
+  width: 960px;
+  margin: auto;
+}
+
+.column {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-bottom: 5rem;
+}
+
+.column h3 {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+  background-color: cadetblue;
+  margin-bottom: 1rem;
+}
+
+/* footer Css */
+
+footer {
+  background-color: azure;
+  width: 960px;
+  margin: auto;
+}
+
+.Copyright {
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.Copyright img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.Copyright span {
+}
