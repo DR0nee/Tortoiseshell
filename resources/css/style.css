@@ -39,9 +39,11 @@ html {
   padding-left: 2rem;
 }
 
-.rightside nav ul li {
+.rightside nav ul a {
   display: inline-block;
   padding: 1rem 2rem;
+  color: white;
+  text-decoration: none;
 }
 
 .middlecontainer {
