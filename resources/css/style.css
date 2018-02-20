@@ -25,6 +25,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 100%;
 }
 
 .leftside {
@@ -61,11 +62,78 @@ html {
   padding: 1.5rem 5rem;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header {
+    padding-top: 0;
+    height: 22rem;
+  }
+
+  .container {
+    max-width: : 100%;
+  }
+
+  .middlesentence {
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .middlesentence h1 {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .leftside span {
+    display: none;
+  }
+
+    .normal-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: inline-block;
+  }
+
+  .middlesentence {
+    margin-top: 9rem ;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .middlesentence h1 {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem ;
+    width: 400px;
+  }
+
+  .middlecontainer {
+    width: 100%;
+  }
+}
+
 /* secondcontainer css */
 
 .secondcontainer {
   display: flex;
   justify-content: center;
+  width: 960px;
+  margin: auto;
 }
 
 .imgcontainer {
@@ -76,7 +144,6 @@ html {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .imgcontainer span {
@@ -86,6 +153,28 @@ html {
 
 .imgcontainer img {
   width: 3.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .secondcontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3.77rem auto;
+  }
+
+  .imgcontainer span {
+    font-family: Helvetica;
+    font-size: 0.77rem;
+    padding-top: 1rem;
+  }
+
+  .imgcontainer  {
+    padding: 1.54rem;
+    height: auto;
+  }
 }
 
 /* columncontainer css */
@@ -117,6 +206,29 @@ html {
   margin-bottom: 1rem;
 }
 
+@media only screen and (max-width: 480px) {
+  .columncontainer {
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .column h3 {
+    width: auto;
+    text-align: center;
+  }
+
+  .column p {
+    font-family: Helvetica;
+    font-size: 0.77rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+}
+
 /* footer Css */
 
 footer {
@@ -136,5 +248,17 @@ footer {
   margin-right: 1rem;
 }
 
-.Copyright span {
+@media only screen and (max-width: 480px) {
+
+  footer {
+    width: 100%;
+  }
+
+  .Copyright span {
+    display: none;
+  }
+
+  .Copyright {
+    justify-content: center;
+  }
 }
